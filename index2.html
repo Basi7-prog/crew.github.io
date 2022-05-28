@@ -589,7 +589,7 @@
 								<span class="fh5co-border"></span></h3>
 							<p><b>Rooms:</b><i> 3</i><br/>
 							<b>Bathroom:</b><i> 2</i><br/><b>Floor:</b><i> 2</i></p>
-							<p><button  class="btn btn-primary btn-sm" onclick="document.getElementById('image_modal_wrapper').style.display = 'flex'">View Rooms</button></p>
+							<p><button  class="btn btn-primary btn-sm" onclick="$('.modal').modal('show')">View Rooms</button></p>
 						</div>
 					</div>
 					<!-- Press Item -->
@@ -604,7 +604,7 @@
 							<h3 class="h2 fh5co-press-title">$900 <span class="fh5co-border"></span></h3>
 							<p><b>Rooms:</b><i> 3</i><br/>
 								<b>Bathroom:</b><i> 2</i><br/><b>Floor:</b><i> 2nd</i></p>
-							<p><button  class="btn btn-primary btn-sm" onclick="document.getElementById('image_modal_wrapper').style.display = 'flex'">View Rooms</button></p>
+								<p><button  class="btn btn-primary btn-sm" onclick="$('.modal').modal('show')">View Rooms</button></p>
 						</div>
 					</div>
 					<!-- Press Item -->
@@ -619,7 +619,7 @@
 							<h3 class="h2 fh5co-press-title">$800 <span class="fh5co-border"></span></h3>
 							<p><b>Rooms:</b><i> 3</i><br/>
 								<b>Bathroom:</b><i> 2</i><br/><b>Floor:</b><i> 2nd</i></p>
-								<p><button  class="btn btn-primary btn-sm" onclick="document.getElementById('image_modal_wrapper').style.display = 'flex'">View Rooms</button></p>
+								<p><button  class="btn btn-primary btn-sm" onclick="$('.modal').modal('show')">View Rooms</button></p>
 						</div>
 					</div>
 					<!-- Press Item -->
@@ -634,7 +634,7 @@
 							<h3 class="h2 fh5co-press-title">$800 <span class="fh5co-border"></span></h3>
 							<p><b>Rooms:</b><i> 3</i><br/>
 								<b>Bathroom:</b><i> 2</i><br/><b>Floor:</b><i> 2nd</i></p>
-								<p><button  class="btn btn-primary btn-sm" onclick="document.getElementById('image_modal_wrapper').style.display = 'flex'">View Rooms</button></p>
+								<p><button  class="btn btn-primary btn-sm" onclick="$('.modal').modal('show')">View Rooms</button></p>
 						</div>
 					</div>
 					<!-- Press Item -->
@@ -644,34 +644,19 @@
 		</div>
 	</div>
 
-	<div class="image-modal-wrapper" id="image_modal_wrapper">
-		<div class="modal-backdrop"></div>
-		<div class="image-modal">
-			<div class="image-modal-sec">
-				<img src="./images/img_9.jpg" alt="">
-				<img src="./images/img_9.jpg" alt="">
+	<div class="modal fade" id="modal">
+		<div class="modal-dialog mx-auto" width="600px" height="500px">
+			<div class="modal-content block">
+				<img class="main-image" width="600px" height="500px" src="./images/img_9.jpg" alt="">
 			</div>
-			<div class="image-modal-sec">
-				<img src="./images/img_9.jpg" alt="">
-				<img src="./images/img_9.jpg" alt="">
+			<div class="container">
+				<img class="" src="./images/img_9.jpg" width="50px" height="50px" alt="" onclick="$('.main-image').attr('src',$(this).attr('src'))">
+				<img class="" src="./images/iphone-1.png" width="50px" height="50px" alt="" onclick="$('.main-image').attr('src',$(this).attr('src'))">
+				<img class="" src="./images/iphone-2.png" width="50px" height="50px" alt="" onclick="$('.main-image').attr('src',$(this).attr('src'))">
 			</div>
-			<div class="image-modal-sec">
-				<img src="./images/img_9.jpg" alt="">
-				<img src="./images/img_9.jpg" alt="">
-			</div>
-			<div class="image-modal-sec">
-				<img src="./images/img_9.jpg" alt="">
-				<img src="./images/img_9.jpg" alt="">
-			</div>
-			<div class="image-modal-sec">
-				<img src="./images/img_9.jpg" alt="">
-				<img src="./images/img_9.jpg" alt="">
-			</div>
-
-			<button onclick="document.getElementById('image_modal_wrapper').style.display = 'none'">Close</button>
 		</div>
-	</div>
 
+	</div>
 
 	
 
